@@ -47,7 +47,7 @@ var server = app.listen(2229, function () {
 
 server.on('upgrade', asyncMiddleware(async (req, socket, head) => {
     debug('chromium process up')
-    const browser = await puppeteer.launch({args: ['--disable-gpu']});
+    const browser = await puppeteer.launch({args: ['--disable-gpu', '--no-sandbox']});
     
     socket.on('close', asyncMiddleware(async () => {
         debug('chromium process down');
