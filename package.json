@@ -14,5 +14,9 @@
     "start": "node chrome-spinner/index.js"
   },
   "author": "florpor",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/florpor/chrome-spinner.git"
+  }
 }
